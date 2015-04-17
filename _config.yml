@@ -1,21 +1,21 @@
 inc:
   # Blog Information
-  title:        "Jekyll Incorporated"
-  subtitle:     "Modern Jekyll based blog for companies"
+  title:        "Komunitas CAH UNP"
+  subtitle:     "Find a lot of friends with the same vision and mision for creative"
   cover_image:  blog-cover.jpg
   logo:         logo.png
   
   # Company information
-  company:      Incorporated
-  url:          http://sendtoinc.com/
-  facebook:     sendtoinc
-  twitter:      sendtoinc
-  gplus:        '101183822199340201470'
-  about_link:   https://sendtoinc.com/about/
+  company:      KCU
+  url:          http://cah.unpkediri.ac.id/
+  facebook:     groups/cahunp
+  twitter:      cahunp
+  gplus:        ''
+  about_link:   /about/
   
   # Product Information
-  product_link: http://incorporated.sendtoinc.com/
-  tagline:      "Get a modern blog for your company"
+  product_link: /events/
+  tagline:      "Competition is that we wait"
   
   # Comments
   disqus:
@@ -24,8 +24,8 @@ inc:
   
   # Sharing settings
   sharing:
-    twitter:    false
-    facebook:   false
+    twitter:    true
+    facebook:   false 
     gplus:      false
     hn:         false
     
@@ -41,13 +41,13 @@ inc:
   
   # Setup your fonts, colors etc at _assets/stylesheets/main.scss
 
-url:         http://incorporated.sendtoinc.com
+url:         http://cah.unpkediri.ac.id
 source:      .
 destination: ./_site
 plugins:     ./_plugins
 layouts:     ./_layouts
 include:     ['.htaccess']
-exclude:     []
+exclude:     ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 timezone:    nil
 
 # Show future posts
@@ -105,6 +105,8 @@ kramdown:
 
 redcloth:
   hard_breaks: true
+
+highlighter: pygments rouge
 
 #
 # jekyll-assets: see more at https://github.com/ixti/jekyll-assets
